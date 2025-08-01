@@ -27,26 +27,13 @@ const Contact: React.FC = () => {
     <section id="contact" className="contact">
       <div className="container">
         <div className="section-header">
-          <h2>Get in Touch</h2>
+          <h1 className="contact-header">Get in Touch</h1>
           <p>
             Ready to begin your journey to healing? Contact me to schedule a
             consultation or ask any questions.
           </p>
         </div>
         <div className="contact-content">
-          <div className="contact-info">
-            <h3>Contact Information</h3>
-            <p>
-              <strong>Phone:</strong> (555) 123-4567
-              <br />
-              <strong>Email:</strong> carolyn@blessingtherapy.com
-              <br />
-              <strong>Office Location:</strong> 123 Therapy Street, Healing
-              City, HC 12345
-              <br />
-              <strong>Office Hours:</strong> Mon-Fri: 9am-6pm, Sat: 10am-2pm
-            </p>
-          </div>
           <form className="contact-form" onSubmit={handleSubmit}>
             <div>
               <label>

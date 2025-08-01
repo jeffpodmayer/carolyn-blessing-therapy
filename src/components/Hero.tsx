@@ -9,14 +9,21 @@ const Hero: React.FC = () => {
           <img src={headshot} alt="Carolyn Blessing" />
         </div>
         <div className="hero-text">
-          <h1>Welcome, I'm Carolyn...</h1>
+          <h1>Welcome, I'm Carolyn</h1>
           <p>
             Grounded, relational, and compassionate therapist dedicated to
             helping you navigate life's challenges and find your path to
             healing.
           </p>
           <div className="hero-buttons">
-            <button className="btn-primary">Let's Talk</button>
+            <button
+              className="btn-primary"
+              onClick={() => {
+                window.location.href = "#contact";
+              }}
+            >
+              Let's Talk
+            </button>
           </div>
         </div>
       </div>

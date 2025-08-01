@@ -28,55 +28,6 @@ const About: React.FC = () => {
               we work to develop practical strategies for managing challenges
               and building a more fulfilling life.
             </p>
-            <div className="credentials">
-              <div className="credential-item">
-                <span className="bullet"></span>
-                <span>Licensed Professional Counselor</span>
-              </div>
-              <div className="credential-item">
-                <span className="bullet"></span>
-                <span>Certified in Cognitive Behavioral Therapy</span>
-              </div>
-              <div className="credential-item">
-                <span className="bullet"></span>
-                <span>Specialized in Anxiety & Depression</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="approach-box">
-            <h3>My Approach</h3>
-            <div className="approach-steps">
-              <div className="step">
-                <div className="step-number">1</div>
-                <div>
-                  <h4>Assessment & Understanding</h4>
-                  <p>
-                    We begin by understanding your unique situation and goals.
-                  </p>
-                </div>
-              </div>
-              <div className="step">
-                <div className="step-number">2</div>
-                <div>
-                  <h4>Personalized Treatment</h4>
-                  <p>
-                    Develop strategies tailored to your specific needs and
-                    preferences.
-                  </p>
-                </div>
-              </div>
-              <div className="step">
-                <div className="step-number">3</div>
-                <div>
-                  <h4>Ongoing Support</h4>
-                  <p>
-                    Continued guidance and support as you implement positive
-                    changes.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
