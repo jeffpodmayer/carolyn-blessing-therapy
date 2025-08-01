@@ -28,10 +28,10 @@ const Contact: React.FC = () => {
       <div className="container">
         <div className="section-header">
           <h1 className="contact-header">Get in Touch</h1>
-          <p>
-            Ready to begin your journey to healing? Contact me to schedule a
-            consultation or ask any questions.
-          </p>
+          {/* <p>
+            Ready to begin your therapy journey? Contact me to schedule a free
+            consultation today!
+          </p> */}
         </div>
         <div className="contact-content">
           <form className="contact-form" onSubmit={handleSubmit}>

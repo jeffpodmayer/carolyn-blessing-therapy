@@ -11,9 +11,8 @@ const Hero: React.FC = () => {
         <div className="hero-text">
           <h1>Welcome, I'm Carolyn</h1>
           <p>
-            Grounded, relational, and compassionate therapist dedicated to
-            helping you navigate life's challenges and find your path to
-            healing.
+            Grounded, relational therapy dedicated to helping you navigate
+            life's challenges and tap into your resilience.
           </p>
           <div className="hero-buttons">
             <button
