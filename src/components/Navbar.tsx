@@ -10,6 +10,7 @@ const Navbar: React.FC = () => {
         <div className="navbar-links">
           <a href="#">Home</a>
           <a href="#about">About</a>
+          <a href="#experience">Experience</a>
           <a href="#services">Pricing & Insurance</a>
           <a href="#contact">Contact Me</a>
         </div>

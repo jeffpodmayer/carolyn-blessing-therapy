@@ -1,5 +1,5 @@
 import React from "react";
-import psychologyTodayIcon from "../assets/images/psychology_today_verified.png";
+import psychologyTodayIcon from "../assets/images/psychology_today_icon.png";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -10,10 +10,17 @@ const Footer: React.FC = () => {
         <div className="footer-content">
           <div className="footer-section">
             <p>
-              <strong>Phone:</strong> (425)-256-3984 || <strong>Email:</strong>{" "}
-              carolynblessingtherapy@gmail.com
+              <strong>Phone:</strong> (425)-256-3984
+            </p>
+            <p>
+              <strong>Email:</strong> carolynblessingtherapy@gmail.com
+            </p>
+            <p>
+              &copy; {currentYear} Carolyn Blessing Therapy. All rights
+              reserved.
             </p>
           </div>
+
           <a
             href="https://www.psychologytoday.com/profile/1574114"
             target="_blank"
@@ -26,9 +33,6 @@ const Footer: React.FC = () => {
               className="psychology-today-icon"
             />
           </a>
-          <p>
-            &copy; {currentYear} Carolyn Blessing Therapy. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>

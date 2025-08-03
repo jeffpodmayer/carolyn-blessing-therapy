@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -17,10 +18,22 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    alert("Form submitted! (This is a placeholder.)");
+
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        e.target as HTMLFormElement,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    } catch (error) {
+      alert("Failed to send message. Please try again.");
+      console.log(error);
+    }
   };
 
   return (
@@ -28,58 +41,64 @@ const Contact: React.FC = () => {
       <div className="container">
         <div className="section-header">
           <h1 className="contact-header">Get in Touch</h1>
-          {/* <p>
-            Ready to begin your therapy journey? Contact me to schedule a free
-            consultation today!
-          </p> */}
         </div>
         <div className="contact-content">
           <form className="contact-form" onSubmit={handleSubmit}>
-            <div>
-              <label>
-                Full Name
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
-            </div>
-            <div>
-              <label>
-                Email Address
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
-            </div>
-            <div>
-              <label>
-                Phone Number
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                />
-              </label>
-            </div>
-            <div>
-              <label>
-                Message
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
+            <div className="form-fields">
+              <div className="form-left">
+                <div className="form-left-item">
+                  <label>
+                    Full Name
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                    />
+                  </label>
+                </div>
+                <div className="form-left-item">
+                  <label>
+                    Email Address
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
+                  </label>
+                </div>
+                <div className="form-left-item">
+                  <label>
+                    Phone Number
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                    />
+                  </label>
+                </div>
+              </div>
+              <div className="form-right">
+                <div>
+                  <label>
+                    Message
+                    <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                    />
+                    <p>
+                      Note: Email is not secure, so please limit personal or
+                      sensitive information shared.
+                    </p>
+                  </label>
+                </div>
+              </div>
             </div>
             <button type="submit">Send Message</button>
           </form>

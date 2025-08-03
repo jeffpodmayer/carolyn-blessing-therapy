@@ -26,9 +26,9 @@ const About: React.FC = () => {
           </p>
           <p>
             My background includes work in outdoor education, children’s
-            advocacy, and community mental health. These experiences have shaped
-            my deep respect for each person’s resilience and my belief in
-            therapy as a space for grounded reflection and meaningful change.
+            advocacy, and community mental health. These experiences have
+            informed my deep respect for each person’s resilience and my belief
+            in therapy as a space for grounded reflection and meaningful change.
           </p>
           <p>
             My approach is relational, trauma-informed, and rooted in
