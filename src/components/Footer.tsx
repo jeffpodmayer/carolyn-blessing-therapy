@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="footer-content">
           <div className="footer-section">
             <p>
-              <strong>Phone:</strong> (425)-256-3984
+              <strong>Phone:</strong> (509) 557-0471
             </p>
             <p>
               <strong>Email:</strong> carolynblessingtherapy@gmail.com
