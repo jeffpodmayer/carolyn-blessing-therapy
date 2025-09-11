@@ -18,7 +18,10 @@ const Hero: React.FC = () => {
             <button
               className="btn-primary"
               onClick={() => {
-                window.location.href = "#contact";
+                window.open(
+                  "https://mindfultherapygroup.com/find-a-provider/?providerId=4339273000330875632",
+                  "_blank"
+                );
               }}
             >
               Let's Talk
