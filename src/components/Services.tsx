@@ -17,10 +17,9 @@ const Services: React.FC = () => {
                   <ul>
                     <li>Aetna</li>
                     <li>Cigna</li>
-                    <li>First Choice</li>
+                    {/* <li>First Choice</li> */}
                     <li>Kaiser</li>
-                    <li>Medicare</li>
-                    <li>PacificSource</li>
+                    {/* <li>PacificSource</li> */}
                     <li>Premera Blue Cross</li>
                     <li>Regence</li>
                     <li>United Healthcare</li>
