@@ -11,7 +11,7 @@ html {
 }
 
 /* --- Navbar --- */
-.navbar {
+/* .navbar {
   background: #0f7ed3;
   color: #fff;
   padding: 1rem 0;
@@ -62,7 +62,7 @@ html {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(67, 206, 162, 0.4);
   border: 1px solid #43cea2;
-}
+} */
 
 /* --- Hero --- */
 .hero {
