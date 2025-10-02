@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Keep your existing styles */
 :root {
   font-family: "Platypi", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -48,4 +53,18 @@ button {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Add the scroll behavior for smooth navigation */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #about,
+  #experience,
+  #services,
+  #contact {
+    scroll-margin-top: 60px;
+  }
 }
