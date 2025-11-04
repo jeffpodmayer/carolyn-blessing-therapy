@@ -11,7 +11,7 @@ const About: React.FC = () => {
     >
       <div className="ml-1">
         <div className="header-with-icon">
-          <h1 className="text-blue-600 text-left mb-1 ">About Me</h1>
+          <h1 className="text-primary text-left mb-1 ">About Me</h1>
         </div>
         <p className="text-gray-700 text-left mb-4 text-md md:text-lg">
           Licensed Clinical Social Work Associate, LSWAIC, Washington State
@@ -20,7 +20,7 @@ const About: React.FC = () => {
 
       <div className="flex flex-col xl:flex-row xl:justify-between xl:items-start text-base xl:text-lg gap-4 xl:gap-8">
         <div className="flex-1 text-gray-700 bg-white rounded-lg p-4 md:p-8 shadow-sm">
-          <p className="mb-4 md:text-left text-center font-bold">
+          <p className="mb-4 md:text-left text-center">
             I'm glad you're here! Whatever you're struggling with, you're not
             alone.
           </p>

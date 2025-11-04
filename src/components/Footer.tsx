@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               <strong>Phone:</strong> (509) 557-0471
             </p>
             <p>
-              <strong>Email:</strong> carolynblessingtherapy@gmail.com
+              <strong>Email:</strong> carolyn@carolynblessingtherapy.com
             </p>
             <p>
               &copy; {currentYear} Carolyn Blessing Therapy. All rights

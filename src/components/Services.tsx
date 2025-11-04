@@ -5,7 +5,7 @@ const Services: React.FC = () => {
     <section id="services" className="services">
       <div className="container">
         <div className="section-header">
-          <h1 className="text-blue-600 text-left mb-1 ">
+          <h1 className="text-primary text-left mb-1 ">
             Pricing & Insurance Information
           </h1>
         </div>

@@ -5,7 +5,7 @@ const Experience: React.FC = () => {
     <section id="experience" className="experience">
       <div className="container">
         <div className="section-header">
-          <h1 className="text-blue-600 text-left mb-1 ">
+          <h1 className="text-primary text-left mb-1 ">
             Experience & Training
           </h1>
           <p>
