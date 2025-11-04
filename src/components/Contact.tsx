@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="contact">
       <div className="container">
         <div className="section-header">
-          <h1 className="contact-header">Get in Touch</h1>
+          <h1 className="text-blue-600 text-left mb-1 ">Get in Touch</h1>
         </div>
         <div className="contact-content">
           <form className="contact-form" onSubmit={handleSubmit}>

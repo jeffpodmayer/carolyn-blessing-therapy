@@ -5,7 +5,9 @@ const Experience: React.FC = () => {
     <section id="experience" className="experience">
       <div className="container">
         <div className="section-header">
-          <h1>Experience & Training</h1>
+          <h1 className="text-blue-600 text-left mb-1 ">
+            Experience & Training
+          </h1>
           <p>
             Professional background and therapeutic approaches that inform my
             practice.

@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center">
+        <div className="hidden lg:flex items-center">
           <a
             href="#home"
             className="text-white no-underline ml-6 font-medium transition-colors duration-200 hover:text-accent"
@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Hamburger Button */}
         <button
-          className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1"
+          className="lg:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation Menu */}
       <div
-        className={`md:hidden transition-all duration-300 ease-in-out ${
+        className={`lg:hidden transition-all duration-300 ease-in-out ${
           isMenuOpen
             ? "max-h-96 opacity-100"
             : "max-h-0 opacity-0 overflow-hidden"
