@@ -8,9 +8,13 @@ const Services: React.FC = () => {
     >
       <div className="max-w-[1200px] mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-primary text-2xl md:text-4xl mb-8 font-bold">
+          <h2 className="text-primary text-2xl md:text-4xl mb-8 font-bold mt-4">
             Pricing & Insurance Information
-          </h1>
+          </h2>
+          <p className="text-gray-600 text-center mb-6 text-lg">
+            Therapy services available to all Washington State residents through
+            secure telehealth sessions
+          </p>
         </div>
 
         <div className="flex flex-col lg:flex-row lg:justify-between gap-8">

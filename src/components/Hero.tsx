@@ -1,5 +1,5 @@
 import React from "react";
-import headshot from "../assets/carolyn_blessing_headshot.jpg";
+import headshot from "../assets/carolyn_blessing_headshot.webp";
 
 const Hero: React.FC = () => {
   return (
@@ -11,8 +11,12 @@ const Hero: React.FC = () => {
         <div className="w-full md:w-auto flex justify-center">
           <img
             src={headshot}
-            alt="Carolyn Blessing"
+            alt="Carolyn Blessing, Licensed Clinical Social Work Associate (LSWAIC) providing therapy services in Washington State"
             className="w-80 h-80 md:w-96 md:h-96 rounded-full object-cover shadow-2xl"
+            width="384"
+            height="384"
+            loading="eager"
+            fetchPriority="high"
             style={{ boxShadow: "0 8px 32px rgba(0, 0, 0, 0.4)" }}
           />
         </div>
@@ -21,8 +25,10 @@ const Hero: React.FC = () => {
             Welcome, I'm Carolyn
           </h1>
           <p className="text-textPrimary text-xl mb-8 leading-relaxed">
-            Grounded, relational therapy dedicated to helping you navigate
-            life's challenges and tap into your resilience.
+            Grounded, relational therapy dedicated to helping Washington State
+            residents navigate trauma, anxiety, grief, and life's challenges.
+            Through evidence-based approaches and compassionate care, I help you
+            tap into your resilience and find healing.
           </p>
           <div className="flex gap-4 flex-wrap">
             <button

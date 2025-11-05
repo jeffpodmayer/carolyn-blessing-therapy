@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#0f7ed3",
-        secondary: "#43cea2",
-        accent: "#ffe082",
+        primary: "#0a5a9e", // Darker blue - WCAG AA compliant
+        secondary: "#2ea574", // Darker green - WCAG AA compliant
+        accent: "#f4b942", // Darker yellow - better contrast
         background: "#f6fafd",
-        textPrimary: "#2d3748",
+        textPrimary: "#1a202c", // Much darker gray - WCAG AA compliant
       },
       fontFamily: {
         platypi: ["Platypi", "Arial", "sans-serif"],
