@@ -3,7 +3,10 @@ import headshot from "../assets/carolyn_blessing_headshot.jpg";
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="w-[90%] mx-auto py-16 px-4 pb-12 text-center">
+    <section
+      id="home"
+      className="w-[90%] mx-auto py-16 px-4 pb-12 text-center scroll-mt-[75px]"
+    >
       <div className="flex items-center justify-between gap-10 mx-auto flex-wrap md:flex-nowrap">
         <div className="w-full md:w-auto flex justify-center">
           <img
@@ -17,7 +20,7 @@ const Hero: React.FC = () => {
           <h1 className="text-primary mb-4 text-4xl md:text-5xl font-bold">
             Welcome, I'm Carolyn
           </h1>
-          <p className="text-text text-xl mb-8 leading-relaxed">
+          <p className="text-textPrimary text-xl mb-8 leading-relaxed">
             Grounded, relational therapy dedicated to helping you navigate
             life's challenges and tap into your resilience.
           </p>

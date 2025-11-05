@@ -8,7 +8,7 @@ export default {
         secondary: "#43cea2",
         accent: "#ffe082",
         background: "#f6fafd",
-        text: "#2d3748",
+        textPrimary: "#2d3748",
       },
       fontFamily: {
         platypi: ["Platypi", "Arial", "sans-serif"],

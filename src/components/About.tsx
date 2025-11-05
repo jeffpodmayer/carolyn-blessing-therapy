@@ -7,11 +7,13 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="bg-green-200/35 px-8 md:px-16 pt-4 pb-8 text-gray-700"
+      className="bg-green-200/35 px-8 md:px-16 pt-4 pb-8 text-gray-700 scroll-mt-[75px]"
     >
       <div className="ml-1">
         <div className="header-with-icon">
-          <h1 className="text-primary text-left mb-1 ">About Me</h1>
+          <h1 className="text-primary text-left mb-4 text-2xl md:text-4xl font-bold">
+            About Me
+          </h1>
         </div>
         <p className="text-gray-700 text-left mb-4 text-md md:text-lg">
           Licensed Clinical Social Work Associate, LSWAIC, Washington State

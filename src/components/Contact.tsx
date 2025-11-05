@@ -37,62 +37,73 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="contact">
-      <div className="container">
-        <div className="section-header">
-          <h1 className="text-blue-600 text-left mb-1 ">Get in Touch</h1>
+    <section id="contact" className="px-4 pt-4 pb-8 scroll-mt-[75px]">
+      <div className="max-w-[1000px] mx-auto">
+        <div className="text-center mb-8 mt-6">
+          <h1 className="text-primary text-2xl md:text-4xl mb-8 font-bold">
+            Get in Touch
+          </h1>
         </div>
-        <div className="contact-content">
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-fields">
-              <div className="form-left">
-                <div className="form-left-item">
-                  <label>
-                    Full Name
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
-                  </label>
-                </div>
-                <div className="form-left-item">
-                  <label>
-                    Email Address
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
-                  </label>
-                </div>
-                <div className="form-left-item">
-                  <label>
-                    Phone Number
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                    />
-                  </label>
+        <div className="flex flex-wrap gap-8 max-w-[1000px] mx-auto">
+          <form
+            className="flex flex-col flex-1 min-w-full bg-white rounded-lg p-8 shadow-sm"
+            onSubmit={handleSubmit}
+          >
+            <div className="flex flex-col md:flex-row gap-8">
+              <div className="flex-1 min-w-0">
+                <div className="flex flex-col gap-4">
+                  <div className="mb-2">
+                    <label className="block text-primary font-bold">
+                      Full Name
+                      <input
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                        className="w-full p-2 mt-2 border rounded-lg text-base bg-background font-normal"
+                      />
+                    </label>
+                  </div>
+                  <div className="mb-2">
+                    <label className="block text-primary font-bold">
+                      Email Address
+                      <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        className="w-full p-2 mt-2 border rounded-lg text-base bg-background font-normal"
+                      />
+                    </label>
+                  </div>
+                  <div className="mb-2">
+                    <label className="block text-primary font-bold">
+                      Phone Number
+                      <input
+                        type="tel"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        className="w-full p-2 mt-2 border rounded-lg text-base bg-background font-normal"
+                      />
+                    </label>
+                  </div>
                 </div>
               </div>
-              <div className="form-right">
+              <div className="flex-1 min-w-0">
                 <div>
-                  <label>
+                  <label className="block text-primary font-bold">
                     Message
                     <textarea
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
                       required
+                      className="w-full p-2 mt-2 border rounded-lg text-base bg-background font-normal h-[240px] resize-y"
                     />
-                    <p>
+                    <p className="italic text-xs text-gray-500 mt-0">
                       Note: Email is not secure, so please limit personal or
                       sensitive information shared.
                     </p>
@@ -100,7 +111,12 @@ const Contact: React.FC = () => {
                 </div>
               </div>
             </div>
-            <button type="submit">Send Message</button>
+            <button
+              type="submit"
+              className="bg-primary text-white border-none py-3 px-6 rounded text-base cursor-pointer transition-colors duration-200 self-center mt-4 w-full md:w-[30%] hover:bg-secondary"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>
